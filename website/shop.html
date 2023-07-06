@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Products</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <div class="navbar1">
+        <a class="home"  href="C:\Users\renuk\Desktop\javascriptProject\Home\index.html"><img  src="./logo.svg" alt="" srcset=""></a>
+      <!-- <h2>Products Page</h2>-->
+       <div onclick="dropDownCart()" class="dropbtn">
+            <div  id="dropdown" class="dropdown">
+                <div id="subtotal" class="subtotal"> 0 </div>
+                <div id="totalItems" class="totalItems"> 0 </div>
+                <button id="logout-btn">logout</button>
+                <button id="removeItemsFromCart" onclick="removeItemFromCart()" >Clear-Cart</button>
+            </div>
+            
+            <div class="cart">
+                <i class="bi bi-cart"></i>
+                <div id="cartTotal" class="cartTotal">0</div>
+            </div>
+        </div>      
+    </div>
+
+
+    <div class="products" id="products">
+
+    </div>
+</body>
+<script src="products-data.js"></script>
+<script src="shop.js"></script>
+</html>

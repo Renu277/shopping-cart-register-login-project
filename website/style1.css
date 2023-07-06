@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+i {
+    cursor: pointer;
+}
+
+/**
+* ? this products page style.
+  *?   navbar
+**/
+.navbar1 {
+    background: white;
+    box-shadow:  0 5px 15px rgba(0, 0, 0.1);
+    padding: 25px 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.cart {
+    position: relative;
+    background-color: antiquewhite;
+    box-shadow:  0 5px 15px rgba(0, 0, 0.1);
+    font-size: 45px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.cartTotal {
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    font-size: 25px;
+    background-color: orangered;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.home {
+    text-decoration: none;
+    color: black;
+    margin-top: 23px;
+}
+/**
+* ? this is for displaying products 
+**/
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 30px;
+    justify-content: center;
+}
+
+.ele {
+    border: 2px solid grey;
+    border-radius: 15px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 6px;
+    opacity: 0;
+    margin-top: -160px;
+}
+.buttons {
+    display: flex;
+    gap: 5px;
+    font-size: 26px;
+    background-color: white;
+    box-shadow:  0 5px 15px rgba(0, 0, 0.1);
+}
+
+
+/* hover on products */
+.details:hover{
+    opacity: 100;
+    animation-duration: 300;
+    position: relative;  
+    left:0;
+     bottom:0; 
+     right: 0;
+      display: flex;
+      justify-content: center;
+     margin-top: -180px;
+      /* align-items:flex-start ; */
+     align-self:baseline;
+     background-color: beige;
+     
+     
+}
+
+/* end */
+
+.price-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.selected{
+    display: flex;
+    gap: 5px;
+    font-size: 19px;
+    font-weight: 300;
+    background-color: white;
+    box-shadow:  0 5px 15px rgba(0, 0, 0.1);
+    border-radius: 5px;
+    min-width: 30;
+    min-height: 33px;
+    padding: 15px;
+}
+
+/*
+**? cart drop down
+*/
+.dropbtn {
+    max-width: 250px;
+    color: white;
+    padding: 45px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 9px;
+}
+
+.dropdown {
+    
+    display: none;
+    position: absolute;
+    background-color: green;
+    box-shadow:  0 5px 15px rgba(0, 0, 0.1);
+    min-width: 160px;
+    min-height: 40px;
+    overflow: auto;
+    right: 0;
+    z-index: 1;
+    align-content: center;
+    padding: 15px;
+    border-radius: 19px;
+
+}
+
+.show {
+    display: block;
+}
+.dropbtn .dropdown .subtotal{
+    padding: 0px,10px;
+    margin-bottom: 10px;
+    color: beige;
+    font-size: 19px;
+}
+.dropbtn .dropdown .totalItems{
+    margin-bottom: 10px; 
+    color: bisque; 
+    font-size: 19px;
+}
+.dropbtn .dropdown button{
+    display: inline-block;
+    padding: 6px;
+    border-radius: 4px;
+   font-size: 15px;
+   font-weight: bold;
+   height: 35px;
+   box-shadow:  0 5px 15px gainsboro;
+   cursor: pointer;
+   transition: all 0.1s ease;
+   outline: none;
+   border-color: 2px solid gainsboro;
+}
+.dropbtn .dropdown button:hover{
+    opacity: 0.7;
+}

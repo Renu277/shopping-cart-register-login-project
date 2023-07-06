@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+}
+
+.container {
+    background: url(https://images.unsplash.com/photo-1587721500213-5a0398bf8a39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTAxfHxzaG9wcGluZyUyMGNhcnQlMjBpbWFnZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 97vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: filter 0.7s;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 60px;
+    font-family: sans-serif;
+    color: orange;
+    letter-spacing: 4px;
+}
+
+.btn {
+    background-color: olivedrab;
+    padding: 15px 35px;
+    min-width: 250px; 
+    cursor: pointer;
+    color: blanchedalmond;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.popup.popup-btn{
+    min-width: 150px;
+    outline: none;
+    border-radius: 5px;
+}
+
+
+
+.active.container {
+    filter: blur(5px) brightness(.7);
+}
+
+.popup {
+    background: url(https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80);
+    background-size: cover;
+    padding: 20px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: beige;
+    width: 550px;
+    min-height: 250px ;  
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px .3;
+    opacity: 1;
+    transition: all 0.7s;
+
+}
+
+h4 {
+    font-size: 25px;
+    margin: 10px 0;
+    font-family: serif;
+    color: yellow;
+}
+
+form label {
+    font-family: serif;
+    color: yellow;
+}
+
+.popup-btn {
+    background-color: aqua;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid;
+}
+
+form.input {
+    border: 2px solid;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+form.input::placeholder {
+    color: lightgray;
+}
+
+.close-icon {
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+
+
+
+.active.popup {
+    visibility: hidden;
+    opacity: 0;
+    top: 10%;
+}
+
